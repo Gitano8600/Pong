@@ -4,11 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        body {
+            align-items: center;
+            display: flex;
+            margin: 0;
+            background: linear-gradient(rgb(80, 32, 4), rgb(80, 53, 116));
+            flex-direction: column;
+            font-family: 'Permanent Marker', cursive;
+            color: rgb(161, 109, 24);
+            font-size: 2em;
+            height: 100%;
+        }
+
+        p {
+            font-size: 1em;
+            margin: 20px;
+        }
+
+        canvas{
+            border: none;
+            image-rendering: pixelated;
+            width: 40%;
+            margin: 4vh, 4vw;
+            flex-grow: 3;
+
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
 </head>
 <body>
     <h1>Pong</h1>
-    
-    <canvas width="700" height="500"></canvas>
-    <script src="./pong.js"></script>
+    <p>Simply press SPACE to start or continue</p>
+    <canvas width="600" height="500" id="pong"></canvas>
+    <p>Player 1: Move paddle up (w) and down (s)<br>
+    Player 2: Move paddle up (o) and down (l)</p>
+    <script src="./app.js" charset="utf-8"></script>
 </body>
 </html>
